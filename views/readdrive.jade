@@ -1,0 +1,55 @@
+block content
+ include ../public/voterslist.html
+ table(bgcolor="#00FF00" id="css_2" border="1" bordercolor="#ff0000" align="center" width="95%"  cellpadding="8" cellspacing="3")
+   tbody
+    tr
+     td 
+       table(bgcolor="#FF0000" align="center")
+        tbody
+         tr
+           <td>Photo Electoral Roll - 2016</td>
+         tr
+          <td>  61 - Tanuku Assembly Constituency </td>  
+    tr
+     td
+       table(bgcolor="#FF0000" align="center")
+        tbody
+         tr
+           <td>No. & name of Polling Station</td>
+         tr
+          <td>139 LAKSHMINARAYANAPURAM</td>  
+    tr
+      td
+        table(bgcolor="#00ff00" width="100%" border="1" bordercolor="#ff0000" cellpadding="5" cellspacing="0")
+          tbody
+            tr(id="font_title" align="center")
+             <td>S.No</td>
+             <td>Voter Id</td>
+             <td>Name</td>
+             <td>Guardian</td>
+             <td>H.No</td>
+             <td>Age</td>
+             <td>Sex</td>
+           each voter, i in voters
+            if( i>3 && i<34)
+              tr(align="center")
+               each info, j in voter
+                if(j == 1)
+                 <td> #{info} </td>
+                else if( j==2)
+                 <td> #{info}</td>
+                else if(j==3)
+                 <td>#{info}</td>
+                else if(j==4)
+                 <td>#{info}</td>                
+                else if(j == 6)
+                 <td>#{info}</td>
+                else if(j ==7)
+                 <td>#{info}</td>
+                else if(j==8)
+                 <td>#{info}</td>       
+ include ../public/voterslist_footer.html
+
+
+
+
